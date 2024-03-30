@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "contact.hpp"
-
 
 void Contact::print_table(int index) {
 
@@ -48,8 +46,7 @@ void Contact::append(void) {
     std::cout << "Insert" + question[i] << std::flush;
     std::getline(std::cin, prompt);
     if (std::cin.eof()) {
-      std::cout << RED "Ctrl-D Detected. Exiting ..." RESET << std::flush;
-      exit(1);
+      return;
     }
     if (check_wc(prompt)) {
       std::cout << RED "Invalid Prompt : input again." RESET << std::endl;

@@ -1,7 +1,7 @@
 
 EXE := phonebook
 
-CPP := c++ -std=c++98
+CPP := c++ #-std=c++98
 
 CPPFLAGS := -Wall -Wextra -Werror
 

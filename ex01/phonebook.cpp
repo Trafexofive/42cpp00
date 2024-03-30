@@ -13,7 +13,6 @@
 #include "phonebook.hpp"
 #include "contact.hpp"
 
-
 void PhoneBook::usage(void) {
   std::cout << CYAN "|==============Crappy Phone Usage==============\n\n";
   std::cout << "| Save a contact using the ADD cmd.\n";
@@ -32,9 +31,7 @@ void PhoneBook::init_search() {
     std::cout << "Please enter the contacts index :" << std::flush;
     std::getline(std::cin, temp);
     if (std::cin.eof()) {
-      std::cout << std::endl
-                << RED "Ctrl-D Detected. Exiting ..." RESET << std::flush;
-      exit(1);
+      return;
     }
     if (std::cin.good() && !temp.empty()) {
       std::istringstream num(temp);
@@ -62,6 +59,8 @@ void PhoneBook::add(void) {
   }
 
   contact[index].append();
+  if (std::cin.eof())
+    return;
   index += 1;
 }
 

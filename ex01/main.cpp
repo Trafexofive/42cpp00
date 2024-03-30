@@ -25,8 +25,13 @@ int main(void) {
       book.add();
     else if (prompt == "SEARCH")
       book.init_search();
-    else if (std::cin.eof() || prompt == "EXIT") {
+    else if (prompt == "EXIT") {
       std::cout << "Exiting ..." << std::endl;
+      break;
+    }
+    if (std::cin.eof()) {
+      std::cout << std::endl
+                << RED "Ctrl-D Detected. Exiting ..." RESET << std::endl;
       break;
     }
   }
