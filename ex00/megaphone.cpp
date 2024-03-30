@@ -1,18 +1,18 @@
 
-#include <cctype>
 #include <iostream>
 
 int main(int argc, char **argv) {
+
+  std::string str;
   if (argc == 1) {
     std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
   } else {
-    for (int i = 1; i < argc; i++) {
-      for (char *p = argv[i]; *p != '\0'; p++) {
-        std::cout << (char)toupper(*p);
-      }
-      if (i < argc - 1) {
-        std::cout << ' ';
-      }
+    for (int i = 1; argv[i]; i++) {
+      str += argv[i];
+      str += " ";
+    }
+    for (int i = 0; str[i]; i++) {
+      std::cout << (char)std::toupper(str[i]) << std::flush;
     }
   }
   std::cout << std::endl;
