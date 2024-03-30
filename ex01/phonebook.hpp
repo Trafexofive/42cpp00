@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.hpp                                      :+:      :+:    :+:   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlamkadm <mlamkadm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 00:50:15 by mlamkadm          #+#    #+#             */
-/*   Updated: 2024/03/30 00:50:18 by mlamkadm         ###   ########.fr       */
+/*   Updated: 2024/03/30 02:55:19 by mlamkadm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_HPP__
 #define PHONEBOOK_HPP__
 
-#include "contact.hpp"
+#include "Contact.hpp"
 #include <iostream>
 #include <sstream>
 #include <string>

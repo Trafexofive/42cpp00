@@ -5,11 +5,11 @@ CPP := c++ -std=c++98
 
 CPPFLAGS := -Wall -Wextra -Werror
 
-HEADER := phonebook.hpp contact.hpp \
+HEADER := PhoneBook.hpp Contact.hpp \
 
 SRC := main \
-	   contact \
-	   phonebook \
+	   Contact \
+	   PhoneBook \
 
 FILES := $(SRC:=.cpp)
 

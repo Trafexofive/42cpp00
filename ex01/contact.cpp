@@ -6,11 +6,11 @@
 /*   By: mlamkadm <mlamkadm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 00:50:07 by mlamkadm          #+#    #+#             */
-/*   Updated: 2024/03/30 00:50:08 by mlamkadm         ###   ########.fr       */
+/*   Updated: 2024/03/30 02:55:59 by mlamkadm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "contact.hpp"
+#include "Contact.hpp"
 
 void Contact::print_table(int index) {
 

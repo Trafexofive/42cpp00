@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.cpp                                      :+:      :+:    :+:   */
+/*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlamkadm <mlamkadm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 00:50:00 by mlamkadm          #+#    #+#             */
-/*   Updated: 2024/03/30 00:50:03 by mlamkadm         ###   ########.fr       */
+/*   Updated: 2024/03/30 02:56:23 by mlamkadm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "phonebook.hpp"
-#include "contact.hpp"
+#include "PhoneBook.hpp"
 
 void PhoneBook::usage(void) {
   std::cout << CYAN "|==============Crappy Phone Usage==============\n\n";
